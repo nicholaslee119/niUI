@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:Skin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012" xmlns:component="com.syndrome.sanguo.battle.combat_ui.card.cardimage.*">
+	<fs:HostComponent name="org.flexlite.domUI.components.SkinnableComponent"/>
+	<fs:Declarations>
+	</fs:Declarations>
+	<dx:states>
+		<dx:State name="normal"/>
+		<dx:State name="disabled"/>
+	</dx:states>
+	<dx:Group x="-41" y="105">
+		<component:CardImage id="cardImage" isPositive="true"/>
+		<dx:Label id="cardNameLabel" x="69" y="142" height="16"/>
+		<dx:layout>
+			<dx:VerticalLayout gap="2" horizontalAlign="center"/>
+		</dx:layout>
+	</dx:Group>
+	<dx:Group id="iconGroup" minWidth="21">
+		<dx:layout>
+			<dx:TileLayout horizontalGap="3" requestedRowCount="5" orientation="columns" verticalGap="3"/>
+		</dx:layout>
+	</dx:Group>
+	<dx:layout>
+		<dx:HorizontalLayout gap="3"/>
+	</dx:layout>
+</dx:Skin>

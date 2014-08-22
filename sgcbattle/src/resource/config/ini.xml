@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <group name="loading"/>
+  <group name="preload">
+    <item name="actions" url="xml/actions.xml" type="xml" language="all" size="11307"/>
+    <item name="event" url="xml/event.xml" type="xml" language="all" size="23537"/>
+    <item name="message_format" url="xml/message_format.xml" type="xml" language="all" size="5133"/>
+    <item name="reason" url="xml/reason.xml" type="xml" language="all" size="41980"/>
+    <item name="attack_first" url="img/attack_first.png" type="img" language="all" size="58076"/>
+    <item name="attack_last" url="img/attack_last.png" type="img" language="all" size="47713"/>
+    <item name="loading" url="swf/loading.swf" type="swf" language="all" size="5186" subkeys="UI_Loading"/>
+    <item name="cards" url="xml/cards.xml" type="xml" language="all" size="209449"/>
+    <item name="battleEffect" url="swf/battleEffect.swf" type="swf" language="all" size="568280" subkeys="Effect_Chain_Source,Effect_Chain_Target,Effect_Chain_Target_Military,Effect_Crisis,Effect_Dead,Effect_Grave,Effect_Launch,Effect_Selectable,Effect_Selected,Effect_Take,Effect_TurnTime,Result_Defeat,Result_Success,SWF_Button_SkipMovie,SWF_ZonedLight,Scar_Arrow,Scar_Blade,Scar_Horse,Scar_Lance,process_js,process_zb,process_zd,process_zp"/>
+  </group>
+  <group name="sound">
+    <item name="MP3_Arrow" url="sound/arrow.mp3" type="sound" language="all" size="18121"/>
+    <item name="MP3_Blade" url="sound/blade.mp3" type="sound" language="all" size="29967"/>
+    <item name="MP3_Broken" url="sound/broken.mp3" type="sound" language="all" size="56198"/>
+    <item name="MP3_Button" url="sound/button.mp3" type="sound" language="all" size="16064"/>
+    <item name="MP3_Countdown" url="sound/countdown.mp3" type="sound" language="all" size="29824"/>
+    <item name="MP3_Dead" url="sound/dead.mp3" type="sound" language="all" size="11477"/>
+    <item name="MP3_Debut" url="sound/debut.mp3" type="sound" language="all" size="25481"/>
+    <item name="MP3_Down" url="sound/down.mp3" type="sound" language="all" size="30721"/>
+    <item name="MP3_Event" url="sound/event.mp3" type="sound" language="all" size="170411"/>
+    <item name="MP3_Failure" url="sound/failure.mp3" type="sound" language="all" size="205531"/>
+    <item name="MP3_Horse" url="sound/horse.mp3" type="sound" language="all" size="59943"/>
+    <item name="MP3_Overturn" url="sound/overturn.mp3" type="sound" language="all" size="12404"/>
+    <item name="MP3_Prompt" url="sound/prompt.mp3" type="sound" language="all" size="11043"/>
+    <item name="MP3_Shuffle" url="sound/shuffle.mp3" type="sound" language="all" size="19832"/>
+    <item name="MP3_Spear" url="sound/spear.mp3" type="sound" language="all" size="12263"/>
+    <item name="MP3_Start" url="sound/start.mp3" type="sound" language="all" size="131336"/>
+    <item name="MP3_Up" url="sound/up.mp3" type="sound" language="all" size="64324"/>
+    <item name="MP3_Victory" url="sound/victory.mp3" type="sound" language="all" size="133967"/>
+    <item name="MP3_Battlemusic" url="sound/battlemusic.mp3" type="sound" language="all" size="2892183"/>
+  </group>
+  <group name="uigroup">
+    <item name="Source" url="ui/Source.swf" type="swf" language="all" size="488989" subkeys="IMG_Battle_Attack,IMG_Battle_AttackColor,IMG_Battle_Denfense,IMG_Battle_DenfenseColor,IMG_BqFlag_Icon,IMG_BqFlag_Mask,IMG_Button_BqDisabled,IMG_Button_BqDown,IMG_Button_BqOver,IMG_Button_BqUp,IMG_Button_CancelDisabled,IMG_Button_CancelDown,IMG_Button_CancelOver,IMG_Button_CancelUp,IMG_Button_FjDisabled,IMG_Button_FjDown,IMG_Button_FjOver,IMG_Button_FjUp,IMG_Button_FmDisabled,IMG_Button_FmDown,IMG_Button_FmOver,IMG_Button_FmUp,IMG_Button_OKCancelBackGround,IMG_Button_OKDisabled,IMG_Button_OKDown,IMG_Button_OKOver,IMG_Button_OKUp,IMG_Button_QjDisabled,IMG_Button_QjDown,IMG_Button_QjOver,IMG_Button_QjUp,IMG_Button_QzDisabled,IMG_Button_QzDown,IMG_Button_QzOver,IMG_Button_QzUp,IMG_Button_SkipDown,IMG_Button_SkipOver,IMG_Button_SkipUp,IMG_Button_SystemDisabled,IMG_Button_SystemGreenDown,IMG_Button_SystemGreenOver,IMG_Button_SystemGreenUp,IMG_Button_SystemRedDown,IMG_Button_SystemRedOver,IMG_Button_SystemRedUp,IMG_Button_ZbDisabled,IMG_Button_ZbDown,IMG_Button_ZbOver,IMG_Button_ZbUp,IMG_CardWindow_BackGround,IMG_CardWindow_BackGround2,IMG_CardWindow_ButtonBackGround,IMG_CardWindow_CancelButtonDisabled,IMG_CardWindow_CancelButtonDown,IMG_CardWindow_CancelButtonOver,IMG_CardWindow_CancelButtonUp,IMG_CardWindow_OkButtonDisabled,IMG_CardWindow_OkButtonDown,IMG_CardWindow_OkButtonOver,IMG_CardWindow_OkButtonUp,IMG_CardWindow_Title,IMG_CardWindow_TitleBackGround,IMG_Card_border,IMG_Card_cardbg,IMG_Card_carderror,IMG_Card_count,IMG_Card_forerver,IMG_Card_hurt,IMG_Card_info,IMG_Chain_EnemyBackGround,IMG_Chain_Mask,IMG_Chain_MyBackGround,IMG_Chat_ButtonBackGroundOver,IMG_Chat_ButtonBackGroundUp,IMG_Chat_ButtonEnterDown,IMG_Chat_ButtonEnterOver,IMG_Chat_ButtonEnterUp,IMG_Chat_InputBackGround,IMG_DistributeInjury_IconAttack,IMG_DistributeInjury_IconBackGround,IMG_DistributeInjury_IconDenfense,IMG_GuideArrow,IMG_GuideTip,IMG_Main_CardInfoBackGround,IMG_Main_CardInfoFrontGround,IMG_Main_ChatBackGround,IMG_Main_CombatBackGround,IMG_Main_MDMask,IMG_RoleInfo_Blood,IMG_RoleInfo_BloodHighLight,IMG_RoleInfo_EnemyBackGround,IMG_RoleInfo_HandNum,IMG_RoleInfo_MyBackGround,IMG_RoleInfo_TimeBackGround,IMG_RoleInfo_TimeOutFlag,IMG_SlotBreak,IMG_VScroller_DownButtonDown,IMG_VScroller_DownButtonOver,IMG_VScroller_DownButtonUp,IMG_VScroller_ThumbDisabled,IMG_VScroller_ThumbDown,IMG_VScroller_ThumbOver,IMG_VScroller_ThumbUp,IMG_VScroller_Track,IMG_VScroller_UpButtonDown,IMG_VScroller_UpButtonOver,IMG_VScroller_UpButtonUp,SWF_StateMovie"/>
+  </group>
+</root>

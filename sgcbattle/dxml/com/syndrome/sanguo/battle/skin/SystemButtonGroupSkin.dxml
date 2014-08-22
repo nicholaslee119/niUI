@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:Skin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012">
+	<fs:HostComponent name="org.flexlite.domUI.components.SkinnableComponent"/>
+	<fs:Declarations>
+	</fs:Declarations>
+	<dx:states>
+		<dx:State name="normal"/>
+		<dx:State name="disabled"/>
+	</dx:states>
+	<dx:Spacer height="9" width="8"/>
+	<dx:Button id="exitButton" label="退出游戏" x="-24" y="6" skinName="com.syndrome.sanguo.battle.skin.button.ExitCombatButtonSkin"/>
+	<dx:Button id="soundButton" label="关闭音乐" x="91" y="6" skinName="com.syndrome.sanguo.battle.skin.button.SystemButtonSkin"/>
+	<dx:Button id="configButton" label="系统设置" x="150" y="2" skinName="com.syndrome.sanguo.battle.skin.button.SystemButtonSkin"/>
+	<dx:Button id="baikeButton" label="游戏百科" x="188" skinName="com.syndrome.sanguo.battle.skin.button.SystemButtonSkin"/>
+	<dx:layout>
+		<dx:HorizontalLayout gap="0"/>
+	</dx:layout>
+</dx:Skin>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:StateSkin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012" xmlns:components="components.*">
+	<fs:HostComponent name="org.flexlite.domUI.components.SkinnableComponent"/>
+	<fs:Declarations>
+                        <dx:GlowFilter blurY="6" color="0xF5A87E" quality="3" blurX="6" strength="1.3" id="glowFilter"/>
+	</fs:Declarations>
+	<dx:states>
+		<dx:State name="normal"/>
+		<dx:State name="disabled"/>
+	</dx:states>
+	<dx:UIAsset id="roleIconUI" height="130" width="130" y="3" horizontalCenter="0" mask="{rectMask}"/>
+            <dx:Rect id="rectMask" height="130" width="130" y="3" horizontalCenter="0" topLeftRadius="64" topRightRadius="64" bottomLeftRadius="64" bottomRightRadius="64"/>
+	<dx:Label id="turnTimeLabel" horizontalCenter="0" verticalCenter="-28.5" width="50" height="50" verticalAlign="middle" textAlign="center" size="50" bold="true" fontFamily="SimHei" filters="{[glowFilter]}" textColor="0xffffff"/>
+	<dx:UIAsset skinName="IMG_RoleInfo_MyBackGround" horizontalCenter="0" bottom="19"/>
+	<dx:UIAsset id="bloodUI" skinName="IMG_RoleInfo_Blood" verticalCenter="74" mask="{bloodMask}" height="19" width="100" left="41"/>
+	<dx:Rect id="bloodMask" height="19" width="100" verticalCenter="74" left="41"/>
+	<dx:Label id="hpLabel" text="30/30" height="19" width="100" verticalCenter="74" verticalAlign="middle" textAlign="center" size="14" textColor="0xffffff" fontFamily="Arial" filters="{[glowFilter]}" horizontalCenter="0"/>
+	<dx:UIAsset skinName="IMG_RoleInfo_BloodHighLight" horizontalCenter="0" verticalCenter="74" height="19" width="100"/>
+	<dx:Label id="nameLabel" width="105" horizontalCenter="-0.5" verticalCenter="52.5" verticalAlign="middle" textAlign="center" textColor="0xffffff" height="16"/>
+	<dx:UIAsset skinName="IMG_RoleInfo_HandNum" x="162" y="5" includeInLayout="false"/>
+	<dx:Label id="handNumLabel" text="0/7" textColor="0xffffff" y="16" includeInLayout="false" x="166" size="15" bold="true"/>
+	<dx:Group id="timeOutFlagGroup" horizontalCenter="0" bottom="67">
+		<dx:UIAsset skinName="IMG_RoleInfo_TimeOutFlag" x="71" y="3"/>
+		<dx:UIAsset skinName="IMG_RoleInfo_TimeOutFlag" x="67" y="3"/>
+		<dx:UIAsset skinName="IMG_RoleInfo_TimeOutFlag" x="71" y="3"/>
+		<dx:layout>
+			<dx:HorizontalLayout gap="0"/>
+		</dx:layout>
+	</dx:Group>
+	<dx:ProgressBar id="turnTimeUI" y="136" skinName="com.syndrome.sanguo.battle.skin.SimpleProgressSkin" width="103" height="3" horizontalCenter="0.5" stepSize="0.2" maximum="100" value="100" slideDuration="0"/>
+	<dx:UIMovieClip id="turnMC" skinName="Effect_TurnTime" x="93" y="72" width="132" height="119" includeInLayout="false"/>
+	<dx:UIMovieClip id="crisisMC" skinName="Effect_Crisis" height="39" includeInLayout="false" y="163" x="40"/>
+</dx:StateSkin>

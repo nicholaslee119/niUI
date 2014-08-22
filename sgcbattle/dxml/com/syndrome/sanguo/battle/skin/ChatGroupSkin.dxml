@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:StateSkin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012" xmlns:component="components.chatrichtext.*" width="324">
+	<fs:HostComponent name="org.flexlite.domUI.components.SkinnableComponent"/>
+	<fs:Declarations>
+		<dx:ArrayCollection id="arr" source="['战场记录','对战','世界','私聊']"/>
+	</fs:Declarations>
+	<dx:UIAsset skinName="IMG_Main_ChatBackGround" top="0" height="265" width="326" x="0" includeInLayout="false" locked="true"/>
+	<dx:TabBar id="chatTabBar" left="11" top="9" dataProvider="{arr}" itemRendererSkinName="com.syndrome.sanguo.battle.skin.ChatTabButtonSkin"/>
+	<dx:ViewStack id="viewStack" top="40" selectedIndex="1" height="189" width="307" x="8">
+		<dx:Group width="100%" name="战场记录" height="100%">
+			<dx:Scroller id="histroyScroller" width="100%" x="0" height="100%" y="0" horizontalScrollPolicy="off">
+				<dx:Group>
+				            <component:ChatRichTextUI id="histroyRichTextUI" width="265" left="25"/>
+				</dx:Group>
+			</dx:Scroller>
+		</dx:Group>
+		<dx:Group width="100%" name="聊天" height="100%">
+			<dx:UIAsset skinName="IMG_Chat_InputBackGround" x="4" y="165"/>
+			<dx:Button id="sendButton" x="284" y="168" skinName="com.syndrome.sanguo.battle.skin.button.ChatEnterButtonSkin"/>
+			<dx:TextInput id="chatInput" x="8" y="168" width="275" height="19" prompt="请输入文本" skinName="com.syndrome.sanguo.battle.skin.ChatTextInputSkin"/>
+			<dx:Scroller id="chatScroller" width="100%" x="0" height="162" y="0" horizontalScrollPolicy="off">
+				<dx:Group>
+				            <component:ChatRichTextUI id="chatRichTextUI" width="265" left="25"/>
+				</dx:Group>
+			</dx:Scroller>
+		</dx:Group>
+	</dx:ViewStack>
+</dx:StateSkin>

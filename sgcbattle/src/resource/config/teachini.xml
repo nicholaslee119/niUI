@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <group name="loading">
+    <item name="LoadingSprite" url="swf/LoadingSprite.swf" type="swf" language="all" size="41918"/>
+  </group>
+  <group name="preload">
+  	<item name="debugTeach" url="teach/teach_1.data" type="bin" language="all" size="679"/>
+    <item name="teach_1" url="teach/teach_1.data" type="bin" language="all" size="679"/>
+    <item name="teach_2" url="teach/teach_2.data" type="bin" language="all" size="679"/>
+    <item name="teach_3" url="teach/teach_3.data" type="bin" language="all" size="679"/>
+    <item name="teach_4" url="teach/teach_4.data" type="bin" language="all" size="679"/>  
+    <item name="teach_5" url="teach/teach_5.data" type="bin" language="all" size="679"/>
+    <item name="teach_6" url="teach/teach_6.data" type="bin" language="all" size="679"/>
+    <item name="command" url="teach/command.xml"  type="xml" language="all" size="10296"/>
+  </group>
+</root>

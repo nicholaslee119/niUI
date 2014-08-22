@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:Skin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012" width="774" height="155">
+	<fs:HostComponent name="org.flexlite.domUI.components.SkinnableComponent"/>
+	<fs:Declarations>
+	</fs:Declarations>
+	<dx:states>
+		<dx:State name="normal"/>
+		<dx:State name="disabled"/>
+	</dx:states>
+	<dx:Button id="bfbqButton" x="13" y="75" skinName="com.syndrome.sanguo.battle.skin.button.BFBQButtonSkin"/>
+	<dx:Button id="qjButton" x="20" y="10" skinName="com.syndrome.sanguo.battle.skin.button.QJButtonSkin"/>
+	<dx:Button id="fjButton" x="13" y="43" skinName="com.syndrome.sanguo.battle.skin.button.FJButtonSkin"/>
+	<dx:Button id="fmButton" x="19" y="107" skinName="com.syndrome.sanguo.battle.skin.button.FMButtonSkin"/>
+	<dx:Button id="qzButton" x="731" y="75" skinName="com.syndrome.sanguo.battle.skin.button.QZButtonSkin"/>
+	<dx:Button id="zbButton" y="9" skinName="com.syndrome.sanguo.battle.skin.button.ZBButtonSkin" x="731"/>
+</dx:Skin>

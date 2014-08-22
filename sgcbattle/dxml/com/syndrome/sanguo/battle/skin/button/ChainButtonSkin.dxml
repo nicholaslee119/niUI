@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:StateSkin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012" width="86" height="49">
+	<fs:HostComponent name="org.flexlite.domUI.components.Button"/>
+	<fs:Declarations>
+	</fs:Declarations>
+	<dx:states>
+		<dx:State name="up"/>
+		<dx:State name="over"/>
+		<dx:State name="down"/>
+		<dx:State name="disabled"/>
+	</dx:states>
+	<dx:UIAsset id="backGround" skinName="IMG_Chain_MyBackGround" horizontalCenter="0" verticalCenter="0"/>
+	<dx:Label id="chainTypeLabel" text="上场技能" textColor="0xFFB400" y="5" horizontalCenter="0"/>
+	<dx:Label id="cardNameLabel" text="关羽" textAlign="right" textColor="0xFBD283" y="27" horizontalCenter="0"/>
+	<dx:UIAsset skinName="IMG_Chain_Mask" horizontalCenter="0" verticalCenter="0" includeIn="over,down"/>
+</dx:StateSkin>

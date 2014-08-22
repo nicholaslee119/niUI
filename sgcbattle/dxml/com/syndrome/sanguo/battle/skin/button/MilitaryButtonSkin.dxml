@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:StateSkin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012">
+	<fs:Declarations>
+	</fs:Declarations>
+	<dx:states>
+		<dx:State name="up"/>
+		<dx:State name="over"/>
+		<dx:State name="down"/>
+		<dx:State name="disabled"/>
+	</dx:states>
+	<dx:UIAsset skinName="IMG_BqFlag_Mask" includeIn="over,down" verticalCenter="0" horizontalCenter="0" width="53" height="20"/>
+	<dx:Rect left="0" top="0" bottom="0" right="0" includeIn="up,disabled" alpha="0"/>
+</dx:StateSkin>

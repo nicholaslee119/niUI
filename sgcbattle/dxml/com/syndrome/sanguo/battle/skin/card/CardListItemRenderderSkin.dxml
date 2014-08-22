@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:StateSkin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012" xmlns:component="com.syndrome.sanguo.battle.combat_ui.card.cardimage.*">
+	<fs:HostComponent name="org.flexlite.domUI.components.supportClasses.ItemRenderer"/>
+	<fs:Declarations>
+	</fs:Declarations>
+	<dx:states>
+		<dx:State name="up"/>
+		<dx:State name="over"/>
+		<dx:State name="down"/>
+		<dx:State name="disabled"/>
+	</dx:states>
+	<component:CardImage id="cardImage" left="0" right="0" top="0"/>
+	<dx:Label id="labelDisplay" text="标签" left="0" right="0" textAlign="center" top="110"/>
+</dx:StateSkin>

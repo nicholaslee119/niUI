@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:StateSkin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012" width="81" height="110">
+	<fs:HostComponent name="org.flexlite.domUI.components.SkinnableComponent"/>
+	<fs:Declarations>
+	</fs:Declarations>
+	<dx:states>
+		<dx:State name="reversed"/>
+		<dx:State name="positive"/>
+	</dx:states>
+	<dx:UIAsset id="reversedImg" skinName="IMG_Card_cardbg" left="0" right="0" top="0" bottom="0" includeIn="reversed"/>
+	<dx:Group id="positiveGroup" includeIn="positive" left="0" top="0" right="0" bottom="0"/>
+</dx:StateSkin>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:Skin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012" height="106">
+	<fs:HostComponent name="org.flexlite.domUI.components.SkinnableComponent"/>
+	<fs:Declarations>
+	</fs:Declarations>
+	<dx:states>
+		<dx:State name="normal"/>
+		<dx:State name="disabled"/>
+	</dx:states>
+            <dx:UIMovieClip id="stateMC" skinName="SWF_StateMovie" x="0" y="0"/>
+	<dx:Label text="第   回合" x="0" y="3" textColor="#F6C7A5" width="75" textAlign="center"/>
+	<dx:Label id="currentRound" text="01" x="21" y="3" width="23" textColor="#F6C7A5" textAlign="center"/>
+</dx:Skin>

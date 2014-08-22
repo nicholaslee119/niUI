@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:Skin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012" width="908" height="518">
+	<fs:HostComponent name="org.flexlite.domUI.components.SkinnableContainer"/>
+	<fs:Declarations>
+		<dx:GlowFilter id="glowFilter" color="0" strength="2"/>
+	</fs:Declarations>
+	<dx:states>
+		<dx:State name="normal"/>
+		<dx:State name="disabled"/>
+	</dx:states>
+ 	<dx:UIAsset skinName="IMG_Main_MDMask" x="12" y="390"/>
+	<dx:UIAsset skinName="IMG_Main_MDMask" x="15" y="8"/>
+	<dx:Label id="myEncampmentNumLabel" x="749" y="476" size="25" filters="{[glowFilter]}" textColor="13947602" textAlign="right" width="50" height="29"/>
+	<dx:Label id="myMDNumLabel" textColor="0xD4D2D2" y="476" textAlign="right" width="50" size="25" filters="{[glowFilter]}" height="29" x="48"/>
+	<dx:Label id="enemyEncampmentNumLabel" x="748" y="96" size="25" filters="{[glowFilter]}" textColor="13947602" textAlign="right" width="50" height="29"/>
+	<dx:Label id="enemyMDNumLabel" textColor="0xD4D2D2" y="93" textAlign="right" width="50" size="25" filters="{[glowFilter]}" height="29" x="51"/>
+	<dx:Group id="contentGroup" height="100%" width="100%" locked="true"/>
+</dx:Skin>

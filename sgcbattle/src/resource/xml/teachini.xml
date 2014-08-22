@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <group name="preload">
+    <item name="teach1" url="1.teach" type="bin" language="all" size="25581"/>
+  </group>
+  <group name="loading">
+    <item name="LoadingSprite" url="LoadingSprite.swf" type="swf" language="all" size="39279"/>
+  </group>
+</root>

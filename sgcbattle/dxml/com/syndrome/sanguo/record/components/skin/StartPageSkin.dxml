@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:StateSkin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012" width="400" height="148">
+	<fs:HostComponent name="org.flexlite.domUI.components.SkinnableComponent"/>
+	<fs:Declarations>
+	</fs:Declarations>
+	<dx:states>
+		<dx:State name="normal"/>
+		<dx:State name="disabled"/>
+	</dx:states>
+	<dx:Button id="loadButton" label="载入录像" x="293" y="4"/>
+	<dx:TextInput id="pathTextInput" x="35" y="4" width="248" editable="false"/>
+	<dx:Button id="startButton" label="开始回放" x="169" y="121"/>
+	<dx:Label y="66" text="请选择视角:" x="75"/>
+	<dx:DropDownList id="playerDropDownList" x="148" y="61" width="136"/>
+</dx:StateSkin>

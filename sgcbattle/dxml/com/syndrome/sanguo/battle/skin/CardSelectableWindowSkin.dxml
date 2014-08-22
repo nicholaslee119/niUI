@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:Skin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012" xmlns:component="components.*" maxHeight="390" minHeight="230" minWidth="280">
+	<fs:HostComponent name="org.flexlite.domUI.components.TitleWindow"/>
+	<fs:Declarations>
+	</fs:Declarations>
+	<dx:states>
+		<dx:State name="normal"/>
+		<dx:State name="disabled"/>
+	</dx:states>
+            <dx:UIAsset skinName="IMG_CardWindow_BackGround" left="0" right="0" top="0" bottom="0"/>
+            <dx:DataGroup id="cardGroup" left="35" right="35" top="79" bottom="53" itemRendererSkinName="com.syndrome.sanguo.battle.skin.card.CardListItemRenderderSkin"/>
+	<component:VScrollBar2  right="20" top="53" bottom="53" viewport="{cardGroup}"/>
+            <dx:UIAsset skinName="IMG_CardWindow_BackGround2" left="18" top="16" right="18"/>
+	<dx:UIAsset skinName="IMG_CardWindow_Title" horizontalCenter="0" top="20"/>
+	<dx:Label id="titleDisplay" text="标签" top="18" height="33" textAlign="center" verticalAlign="middle" size="14" bold="true" fontFamily="SimSun" textColor="0x4f2b0e" horizontalCenter="0" width="100"/>
+            <dx:Rect id="moveArea" height="53" fillAlpha="0" left="0" top="0" right="0" locked="true"/>
+	<dx:UIAsset skinName="IMG_CardWindow_BackGround2" height="33" left="18" right="18" bottom="20"/>
+	<dx:Group horizontalCenter="0" bottom="20">
+		<dx:Button id="okButton" label="按钮" x="11" y="4" skinName="com.syndrome.sanguo.battle.skin.button.CardWindowOKButtonSkin"/>
+		<dx:Button id="cancelButton" label="按钮" x="51" y="11" skinName="com.syndrome.sanguo.battle.skin.button.CardWindowCancelButtonSkin"/>
+		<dx:layout>
+			<dx:HorizontalLayout gap="-12"/>
+		</dx:layout>
+	</dx:Group>
+	<dx:Label id="tipLabel" text="标签" left="35" right="35" top="53" height="25" verticalAlign="middle" textAlign="center" textColor="0x4f2b0e"/>
+</dx:Skin>

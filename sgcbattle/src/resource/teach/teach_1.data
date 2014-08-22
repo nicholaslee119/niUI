@@ -1,0 +1,51 @@
+setPlayer me:true username:tester1 nickname:新丁 icon:Public\Home\Image\icon\MALE_1.png
+setPlayer me:false username:tester2 nickname:敌方主帅 icon:Public\Home\Image\icon\MALE_9.png
+ProvisionDisplay playerName:tester1 provision:30 provisionLimit:30
+ProvisionDisplay playerName:tester2 provision:30 provisionLimit:30
+GameStageDisplay playerName:tester2 gameState:2 roundIndex:1
+InitCardSlotDisplay playerName:tester1 cardAddress:40002,00000,00001,00002,00003,100000,100001,100002,50000,50001,50002,50003,50004,50005,150000,150001,150002,150003,150004,150005 cardIds:101066,101068,104001,301003,104024,101004,101006,101008,301003,403005,304001,203047,203047,101004,302001,202019,101056,202019,101056,101056 cardStates:1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+MoveCardDisplay playerName:tester1 originAddress:100000 destinationAddress:140002 cardID:101004 cardState:[1] amount:1
+showTip content:何事喧哗？ headName:新丁 headIcon:Public\Home\Image\icon\MALE_1.png position:560,430 clickRemove:true
+showTip content:似乎是黄巾余党。 headName:哨探 headIcon:Public\Home\Image\icon\FEMALE_0.png position:560,430 clickRemove:true
+MoveCardDisplay playerName:tester1 originAddress:100000,100001 destinationAddress:140003,140004 cardID:101006,101008 cardState:1,1 amount:2
+showTip content:一波鼠辈。 headName:新丁 headIcon:Public\Home\Image\icon\MALE_1.png position:560,430 clickRemove:true
+showTip content:大人断不可轻敌啊，敌军个个虽实力不强，但贼党人多势众，我方若不出对策，也必然会陷入麻烦之中。 headName:哨探 headIcon:Public\Home\Image\icon\FEMALE_0.png position:560,430 clickRemove:true
+showTip content:那我军现在应该如何应对？ headName:新丁 headIcon:Public\Home\Image\icon\MALE_1.png position:560,430 clickRemove:true
+showTip content:大人莫急，可先让【张邈】将军抵挡一番。 headName:哨探 headIcon:Public\Home\Image\icon\FEMALE_0.png position:560,430 clickRemove:true
+GameStageDisplay playerName:tester2 gameState:3 roundIndex:1
+BattleFieldDisplay playerName:tester1 attackList:[1,40002] defenseList:[1,140002]
+showArrow name:1 position:440,270 direction:down clickRect:0,0 clickRemove:false
+removeArrow name:1
+showTip content:原来如此。也就是说，兵权需求越高的将领，各方面能力越强，但上场的难度也越高。 headName:新丁 headIcon:Public\Home\Image\icon\MALE_1.png position:560,430 clickRemove:true
+showTip content:大人英明。为了让大人更好地理解，请先抓两张牌吧。 headName:哨探 headIcon:Public\Home\Image\icon\FEMALE_0.png position:560,430 clickRemove:true
+MoveCardDisplay playerName:tester1 originAddress:[50000,50001] destinationAddress:[00001,00002] cardID:[104001,301003] cardState:[1,1] amount:2
+showTip content:真神奇，正式游戏中还能像现在这样随便抓卡么？ headName:新丁 headIcon:Public\Home\Image\icon\MALE_1.png position:560,260 clickRemove:true
+showTip content:这个，当然是不可能的，正式游戏的时候自然有相关的抓卡规则了……我们还是先回到正题。 headName:哨探 headIcon:Public\Home\Image\icon\FEMALE_0.png position:560,260 clickRemove:true
+showArrow name:1 position:740,550 direction:down clickRect:0,0 clickRemove:false
+showTip content:“刘辟”的兵权条件是“1骑”，意思是，当己方场上存在至少1张步兵兵权卡的时候，他就可以上场了。 headName:哨探 headIcon:Public\Home\Image\icon\FEMALE_0.png position:560,260 clickRemove:true
+removeArrow name:1
+showArrow name:1 position:820,550 direction:down clickRect:0,0 clickRemove:true
+showTip content:另外一张就是兵权卡。 headName:哨探 headIcon:Public\Home\Image\icon\FEMALE_0.png position:560,280 clickRemove:true
+removeArrow name:1
+showTip content:那么接下去我们要做的，仅需将此“骑兵兵权”摆放上场。 headName:哨探 headIcon:Public\Home\Image\icon\FEMALE_0.png position:560,430 clickRemove:true
+ChooseActionRequest playerName:tester1 actions:[0,5] cardAddress:[] skip:true
+showArrow name:1 position:560,620 direction:down clickRect:72,100 clickRemove:true
+ChooseActionRequest playerName:tester1 actions:[] cardAddress:[00002] skip:false
+showArrow name:1 position:820,550 direction:down clickRect:72,100 clickRemove:true
+MoveCardDisplay playerName:tester1 originAddress:[00002] destinationAddress:[10000] cardID:[301003] cardState:[1] amount:1
+showTip content:于是我方场上就有1张骑兵兵权了，大人可以选择派遣任一将领上场了。 headName:哨探 headIcon:Public\Home\Image\icon\FEMALE_0.png position:560,230 clickRemove:true
+ChooseActionRequest playerName:tester1 actions:[5] cardAddress:[] skip:true
+showArrow name:1 position:560,550 direction:down clickRect:60,32 clickRemove:true
+showTip content:刘辟的攻击值为2，请大人派遣刘辟上场吧。 headName:哨探 headIcon:js position:560,430 clickRemove:true
+ChooseActionRequest playerName:tester1 actions:[] cardAddress:[00000,00001] skip:false
+showArrow name:1 position:740,550 direction:down clickRect:72,100 clickRemove:true
+showArrow name:1 position:840,260 direction:down clickRect:380,100 clickRemove:true
+MoveCardDisplay playerName:tester1 originAddress:[00001] destinationAddress:[40004] cardID:[104001] cardState:[1] amount:1
+showTip content:刘辟将军已经待命。 headName:哨探 headIcon:Public\Home\Image\icon\FEMALE_0.png position:560,430 clickRemove:true
+MoveCardDisplay playerName:tester1 originAddress:[50000,50001] destinationAddress:[00001,00002] cardID:[101053,101054] cardState:[1,1] amount:1
+showTip content:请大人谨记，只有“兵权条件”被满足了，目标将领才能派遣上场。 headName:哨探 headIcon:Public\Home\Image\icon\FEMALE_0.png position:560,430 clickRemove:true
+showTip content:请再看“关羽”、“张飞”二将，他们的兵权条件都很苛刻，但是相对的，二将的战力都很强。 headName:哨探 headIcon:Public\Home\Image\icon\FEMALE_0.png position:560,430 clickRemove:true
+showTip content:名将就是名将...应该还有其他更多的将领吧？ headName:新丁 headIcon:Public\Home\Image\icon\FEMALE_0.png position:560,430 clickRemove:true
+showTip content:是的。将领和兵权的关系很微妙，小将虽弱，但可积沙成塔；大将虽强，但难以一挡百。 headName:哨探 headIcon:Public\Home\Image\icon\FEMALE_0.png position:560,430 clickRemove:true
+showTip content:今日介绍到此为止。如何寻觅适合自己的将领人才，如何组建一支强大的军队，还望大人今后多多思考。 headName:哨探 headIcon:Public\Home\Image\icon\FEMALE_0.png position:560,430 clickRemove:true
+exit

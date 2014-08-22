@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:Skin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012" xmlns:component="components.*" maxHeight="390" minHeight="300" minWidth="400">
+	<fs:HostComponent name="org.flexlite.domUI.components.TitleWindow"/>
+	<fs:Declarations>
+	</fs:Declarations>
+	<dx:states>
+		<dx:State name="normal"/>
+		<dx:State name="disabled"/>
+	</dx:states>
+            <dx:UIAsset skinName="IMG_CardWindow_BackGround" left="0" right="0" top="0" bottom="0"/>
+            <dx:UIAsset skinName="IMG_CardWindow_BackGround2" left="18" top="16" right="18"/>
+	<dx:UIAsset skinName="IMG_CardWindow_Title" horizontalCenter="0" top="20"/>
+	<dx:Label id="titleDisplay" text="伤害分配" top="18" height="33" textAlign="center" verticalAlign="middle" size="14" bold="true" fontFamily="SimSun" textColor="0x4f2b0e" horizontalCenter="0" width="100"/>
+            <dx:Rect id="moveArea" height="49" fillAlpha="0" left="0" top="0" right="0" locked="true"/>
+	<dx:UIAsset skinName="IMG_CardWindow_BackGround2" height="33" left="18" right="18" bottom="20"/>
+	<dx:Group horizontalCenter="0" bottom="20">
+		<dx:Button id="okButton" label="按钮" x="11" y="4" skinName="com.syndrome.sanguo.battle.skin.button.CardWindowOKButtonSkin"/>
+		<dx:layout>
+			<dx:HorizontalLayout gap="-12"/>
+		</dx:layout>
+	</dx:Group>
+	<dx:Group left="20" top="53" right="20" bottom="53">
+		<dx:Group id="myItemGroup" height="129" top="136" left="27" right="0">
+			<dx:layout>
+				<dx:HorizontalLayout horizontalAlign="center" gap="20"/>
+			</dx:layout>
+		</dx:Group>
+		<dx:Group id="enemyItemGroup" height="129" left="27" right="0">
+			<dx:layout>
+				<dx:HorizontalLayout horizontalAlign="center" gap="20"/>
+			</dx:layout>
+		</dx:Group>
+		<dx:Label text="防守战团" width="20" verticalAlign="middle" textAlign="center" size="16" bold="true" textColor="0xff0000" verticalCenter="68"/>
+		<dx:Label textColor="0xFF0000" verticalAlign="middle" bold="true" text="攻击战团" width="20" size="16" textAlign="center" x="0" verticalCenter="-68"/>
+	</dx:Group>
+</dx:Skin>

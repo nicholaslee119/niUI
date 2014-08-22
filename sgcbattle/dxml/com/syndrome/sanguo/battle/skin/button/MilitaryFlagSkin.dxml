@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:Skin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012" xmlns:component="components.rollnum.*" height="27" width="87">
+	<fs:HostComponent name="org.flexlite.domUI.components.SkinnableComponent"/>
+	<fs:Declarations>
+	</fs:Declarations>
+	<dx:UIMovieClip id="icon" skinName="IMG_BqFlag_Icon" verticalCenter="0" left="-4"/>
+	<component:RollNumGroup id="numGroup" left="32" top="0" bottom="0" right="0"/>
+	<dx:Button id="button" verticalCenter="0" height="20" left="35" width="52" skinName="com.syndrome.sanguo.battle.skin.button.MilitaryButtonSkin"/>
+</dx:Skin>

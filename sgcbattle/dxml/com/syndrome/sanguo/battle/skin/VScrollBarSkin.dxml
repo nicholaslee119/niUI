@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:StateSkin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012" height="130">
+	<fs:HostComponent name="org.flexlite.domUI.components.VScrollBar"/>
+	<fs:Declarations>
+	</fs:Declarations>
+	<dx:states>
+		<dx:State name="normal"/>
+		<dx:State name="disabled"/>
+	</dx:states>
+	<dx:Button id="decrementButton" label="按钮" skinName="com.syndrome.sanguo.battle.skin.button.VScrollBarUpButtonSkin" top="0"/>
+	<dx:Button id="incrementButton" label="按钮" x="0" skinName="com.syndrome.sanguo.battle.skin.button.VScrollBarDownSkin" bottom="0"/>
+	<dx:Button id="track" label="按钮" x="0" top="21" skinName="com.syndrome.sanguo.battle.skin.button.VScrollBarTarackButtonSkin" bottom="21"/>
+	<dx:Button id="thumb" label="按钮" skinName="com.syndrome.sanguo.battle.skin.button.VScrollBarThumbButtonSkin" x="0" y="76" minHeight="15"/>
+</dx:StateSkin>

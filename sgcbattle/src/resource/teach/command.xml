@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+group : name组名	label显示名称
+command : name命名的名称	label显示名称
+param : name参数名称	label参数显示名称		type参数类型		component显示参数列表要用到的组件	defaultValue默认值
+ -->
+<config>
+	 <defaultValue name="playerName" value="tester1"/>
+	 <group name="tool" label="工具函数">
+		<command name="gotoStep" label="跳到指定位置">
+			<param name="step" label="位置" />
+		</command>
+		<command name="delayCall" label="延时执行">
+			<param name="step" label="位置" />
+			<param name="time" label="延时(秒)" type="Number" />
+		</command>
+		<command name="exit" label="退出教学">
+		</command>
+	</group>
+	<group name="guide" label="向导相关">
+		<command name="showArrow" label="显示箭头">
+			<param name="name" label="编号" />
+			<param name="position" label="位置" type="Array_int" />
+			<param name="direction" label="方向" defaultValue="down"/>
+			<param name="clickRect" label="点击触发宽高" type="Array_int"/>
+			<param name="clickRemove" label="自动移除" type="Boolean" defaultValue="true"/>
+		</command>
+		<command name="removeArrow" label="移除箭头">
+			<param name="name" label="编号" />
+		</command>
+		<command name="showTip" label="显示对话">
+			<param name="content" label="内容" />
+			<param name="headName" label="头像名" />
+			<param name="headIcon" label="头像图片" />
+			<param name="position" label="位置" type="Array_int" />
+			<param name="clickRemove" label="自动移除" type="Boolean" defaultValue="true"/>
+		</command>
+		<command name="removeTip" label="移除对话">
+		</command>
+	</group>
+	<group name="mainUI" label="界面显示">
+		<command name="setPlayer" label="初始化玩家信息">
+			<param name="me" label="是否我方" type="Boolean" component="spark.components.RadioButton" />
+			<param name="username" label="用户名" />
+			<param name="nickname" label="昵称" />
+			<param name="icon" label="头像" />
+		</command>
+		<command name="GameStageDisplay" label="展示游戏阶段">
+			<param name="playerName" label="玩家" />
+			<param name="gameState" label="当前阶段" type="int" />
+			<param name="roundIndex" label="回合数" type="int" />
+		</command>
+		<command name="FirstActionPlayerDisplay" label="展示先手玩家">
+			<param name="playerName" label="玩家" />
+		</command>
+		<command name="MoveCardDisplay" label="卡牌移动">
+			<param name="playerName" label="玩家" />
+			<param name="originAddress" label="起始地址" type="Array_int" defaultValue="[]"/>
+			<param name="destinationAddress" label="目标地址" type="Array_int" defaultValue="[]"/>
+			<param name="cardID" label="编号" type="Array_int" defaultValue="[]"/>
+			<param name="cardState" label="状态" type="Array_int" defaultValue="[]"/>
+			<param name="amount" label="移动数量" type="int" defaultValue="1"/>
+			<param name="reason" label="移动原因" type="int"/>
+		</command>
+		<command name="InitCardSlotDisplay" label="卡槽初始化">
+			<param name="playerName" label="玩家" />
+			<param name="cardAddress" label="地址" type="Array_int" defaultValue="[]"/>
+			<param name="cardIds" label="卡片编号" type="Array_int" defaultValue="[]"/>
+			<param name="cardStates" label="状态" type="Array_int" defaultValue="[]"/>
+		</command>
+		<command name="ShuffleCardSlotDisplay" label="洗切卡组">
+			<param name="cardIds" label="编号" type="Array_int"/>
+		</command>
+		<command name="ProvisionDisplay" label="粮草变化">
+			<param name="playerName" label="玩家" />
+			<param name="provision" label="当前粮草" type="int" />
+			<param name="provisionLimit" label="粮草上限" type="int" defaultValue="30"/>
+		</command>
+		<command name="SlotLimitDisplay" label="显示卡槽数量上限">
+			<param name="playerName" label="玩家" />
+			<param name="slotType" label="卡槽类型" type="int" defaultValue="1"/>
+			<param name="slotLimit" label="上限" type="int" defaultValue="7"/>
+		</command>
+		<command name="LinkDisplay" label="连环显示">
+			<param name="playerName" label="玩家" />
+			<param name="uuid" label="连环编号" defaultValue="1"/>
+			<param name="linkType" label="连环类型" type="int" defaultValue="16"/>
+			<param name="cardID" label="卡片编号" type="int"/>
+			<param name="cardAddress" label="卡片地址" type="int"/>
+			<param name="targetAddress" label="目标卡片地址" type="Array_int" defaultValue="[]"/>
+		</command>
+		<command name="GeneralAttributeChangeDisplay" label="武将属性变化">
+			<param name="playerName" label="玩家" />
+			<param name="generalAddress" label="武将地址" type="int"/>
+			<param name="attack" label="攻击" type="int"/>
+			<param name="health" label="生命" type="int"/>
+			<param name="intelligence" label="智力" type="int"/>
+			<param name="reason" label="原因" type="int" />
+		</command>
+		<command name="BattleFieldDisplay" label="战团展示">
+			<param name="playerName" label="玩家" />
+			<param name="attackList" label="攻击者列表" type="Array_Array_int"/>
+			<param name="defenseList" label="防守者列表" type="Array_Array_int"/>
+		</command>
+		<command name="CardDisplay" label="卡片展示">
+			<param name="cardID" label="卡片编号" type="Array_int" defaultValue="[]"/>
+		</command>
+		<command name="BattleInjuryDisplay" label="战团伤害展示">
+			<param name="attackerName" label="进攻玩家"/>
+			<param name="groupId" label="战团编号"/>
+			<param name="cardAddress" label="卡片地址"  type="Array_int" defaultValue="[]"/>
+			<param name="fightInjury" label="战斗伤害"  type="Array_int" defaultValue="[]"/>
+			<param name="lastInjury" label="永久伤害"  type="Array_int" defaultValue="[]"/>
+		</command>
+		<command name="CountDownDisplay" label="操作倒计时">
+			<param name="playerName" label="玩家" />
+			<param name="timeOut" label="限时" type="int" defaultValue="60"/>
+		</command>
+		<command name="CountTime" label="超时次数">
+			<param name="playerName" label="玩家" />
+			<param name="countTimeout" label="累计次数" type="int" defaultValue="0"/>
+		</command>
+		<command name="SwopCard" label="交换卡片位置">
+			<param name="playerName" label="玩家" />
+			<param name="address" label="交换的卡片地址" type="Array_int" defaultValue="[]"/>
+		</command>
+		<command name="PhalanxAttributeChangeDisplay" label="阵型属性变化">
+			<param name="playerName" label="玩家" />
+			<param name="phalanxAddress" label="阵型卡地址" type="int"/>
+			<param name="generalAddress" label="武将卡地址" type="Array_int" defaultValue="[]"/>
+			<param name="attack" label="阵型卡攻击" type="int"/>
+			<param name="health" label="阵型卡生命" type="int"/>
+			<param name="reason" label="原因" type="int"/>
+		</command>
+		<command name="CardRoundDisplay" label="显示卡片回合标记">
+			<param name="playerName" label="玩家" />
+			<param name="cardAddress" label="地址" type="int"/>
+			<param name="round" label="剩余回合数" type="int"/>
+		</command>
+	</group>
+	<group name="event" label="用户交互">
+		<command name="ChooseCardFromListRequest" label="选择卡片">
+			<param name="playerName" label="玩家" />
+			<param name="cardAddress" label="卡片地址" type="Array_int" defaultValue="[]"/>
+			<param name="cardID" label="卡片编号" type="Array_int" defaultValue="[]"/>
+			<param name="minAmount" label="最小值" type="int" defaultValue="1"/>
+			<param name="maxAmount" label="最大值" type="int" defaultValue="1"/>
+			<param name="cancel" label="可取消" type="Boolean" defaultValue="false"/>
+			<param name="showInSlot" label="是否在槽中显示" type="Boolean" defaultValue="true"/>
+		</command>
+		<command name="ChooseSlotFromListRequest" label="选择卡槽">
+			<param name="playerName" label="玩家" />
+			<param name="slotAddress" label="卡槽地址" type="Array_int" defaultValue="[]"/>
+			<param name="cancel" label="可取消" type="Boolean" defaultValue="false"/>
+		</command>
+		<command name="ChooseTriggerEffectRequest" label="选择触发效果">
+			<param name="playerName" label="玩家" />
+			<param name="effects" label="效果" type="Array_int" defaultValue="[]"/>
+			<param name="skips" label="是否可跳过" type="Array_Boolean" defaultValue="[]"/>
+			<param name="event" label="提示" type="int"/>
+		</command>
+		<command name="ChooseActionRequest" label="选择动作">
+			<param name="playerName" label="玩家" />
+			<param name="actions" label="动作" type="Array_String" defaultValue="[]"/>
+			<param name="cardAddress" label="可选卡片地址" type="Array_int" defaultValue="[]"/>
+			<param name="skip" label="是否可跳过" type="Boolean"/>
+		</command>
+		<command name="ChooseCardActionRequest" label="选择卡片技能">
+			<param name="address" label="卡牌地址" type="int"/>
+			<param name="actions" label="卡片技能" type="Array_String" defaultValue="[]"/>
+			<param name="actionType" label="操作类型" type="Boolean"/>
+		</command>
+		<command name="SortCardRequest" label="卡片排序">
+			<param name="cardAddress" label="卡牌地址" type="int"/>
+			<param name="cardID" label="卡片技能" type="Array_String" defaultValue="[]"/>
+			<param name="event" label="提示" type="int"/>
+		</command>
+		<command name="ChoosePhalanxGeneralRequest" label="选择结阵武将">
+			<param name="generalAddress" label="卡牌地址" type="Array_int" defaultValue="[]"/>
+			<param name="confirm" label="确定" type="Boolean"/>
+			<param name="cancel" label="取消" type="Boolean"/>
+		</command>
+		<command name="BattleCardRequest" label="选择进攻武将">
+			<param name="cardAddress" label="卡牌地址" type="Array_int" defaultValue="[]"/>
+			<param name="confirm" label="确定" type="Boolean"/>
+			<param name="cancel" label="取消" type="Boolean"/>
+		</command>
+		<command name="ConfirmToStartRequest" label="显示对话框">
+			<param name="event" label="提示" type="int"/>
+			<param name="cancel" label="取消" type="Boolean"/>
+		</command>
+		<command name="DefenseGeneralRequest" label="选择防守武将">
+			<param name="defenseRelationMap" label="防守对应关系" type="Array_Array_String"/>
+			<param name="confirm" label="确定" type="Boolean"/>
+		</command>
+		<command name="RedealRequest" label="重置手牌询问">
+		</command>
+	</group>
+</config>

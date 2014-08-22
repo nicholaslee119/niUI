@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:StateSkin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012" width="100" height="5">
+	<fs:HostComponent name="org.flexlite.domUI.components.ProgressBar"/>
+	<fs:Declarations>
+	</fs:Declarations>
+	<dx:states>
+		<dx:State name="normal"/>
+		<dx:State name="disabled"/>
+	</dx:states>
+	<dx:UIAsset id="track" left="0" right="0" top="0" bottom="0"/>
+	<dx:Rect id="thumb" width="20" x="0" top="0" bottom="0" fillColor="0xe5cd02"/>
+</dx:StateSkin>

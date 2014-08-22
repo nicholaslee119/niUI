@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dx:StateSkin xmlns:dx="http://www.flexlite.org/dxml/2012" xmlns:fs="http://www.flexlite.org/studio/2012" minWidth="19">
+	<fs:HostComponent name="org.flexlite.domUI.components.Button"/>
+	<fs:Declarations>
+	</fs:Declarations>
+	<dx:states>
+		<dx:State name="up"/>
+		<dx:State name="over"/>
+		<dx:State name="down"/>
+		<dx:State name="disabled"/>
+	</dx:states>
+	<dx:UIAsset skinName="IMG_VScroller_ThumbDown" includeIn="down,disabled" left="0" right="0" top="0" bottom="0"/>
+	<dx:UIAsset skinName="IMG_VScroller_ThumbOver" includeIn="over" left="0" right="0" top="0" bottom="0"/>
+	<dx:UIAsset skinName="IMG_VScroller_ThumbUp" includeIn="up" left="0" right="0" top="0" bottom="0"/>
+</dx:StateSkin>

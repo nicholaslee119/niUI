@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <group name="loading">
+    <item name="LoadingSprite" url="swf/LoadingSprite.swf" type="swf" language="all" size="41918"/>
+  </group>
+  <group name="preload"/>
+</root>
