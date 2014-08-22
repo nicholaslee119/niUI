@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="com.syndrome.sanguocard.uiclass.UISpriteWithSlider"/>
+    <classEntry path="com.syndrome.sanguocard.uiclass.UIGallery"/>
+    <classEntry path="com.syndrome.sanguocard.uiclass.UIRadio"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>
