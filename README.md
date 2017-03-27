@@ -6,3 +6,4 @@ NicFrame
 ### UIButton
 ### GameLib
 ### MainFram
+### ReadyRoom
