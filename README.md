@@ -7,3 +7,4 @@ NicFrame
 ### GameLib
 ### MainFram
 ### ReadyRoom
+### LobbyRoom
