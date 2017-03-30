@@ -1,6 +1,6 @@
 NiUI
 ========
-# A Game UI components Library in ActionScript
+# A Game UI components Library in ActionScript3
 ### battle
     the battle UI
 ### classLib
