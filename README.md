@@ -1,4 +1,4 @@
-NicFrame
+NiUI
 ========
 # A Game UI components Library in ActionScript
 ### battle
