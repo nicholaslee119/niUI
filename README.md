@@ -19,9 +19,7 @@ NiUI
     the readyRoom UI
 ### uiClass
     the UI classes
-
-==========
-
+------
 ### usage
 
 ### build    
