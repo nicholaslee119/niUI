@@ -43,7 +43,7 @@ package com.load
 			loader.addEventListener(SecurityErrorEvent.SECURITY_ERROR,onSecurityError);
 			loader.load(urlReq);
 		}
-		//完成
+
 		private function onXmlComplete(e:Event):void
 		{
 			loader.removeEventListener(Event.COMPLETE,onXmlComplete);
@@ -84,12 +84,12 @@ package com.load
 			evt.errMsg=err;
 			dispatchEvent(evt);
 		}
-		//IO错误
+
 		private function onIOError(e:IOErrorEvent):void
 		{
 			sendMsg(xmlLoadEvent.err,"onIOError:"+e.text);
 		}
-		//安全错误
+		
 		private function onSecurityError(e:SecurityErrorEvent):void
 		{
 			sendMsg(xmlLoadEvent.err,"onSecurityError:"+e.text);
