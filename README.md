@@ -1,6 +1,23 @@
-NiUI
+NiUI -- A Game UI components Library in ActionScript3
 ========
-# A Game UI components Library in ActionScript3
+## usage
+```
+import com.syndrome.sanguocard.uiclass.UISpriteWithSlider;
+import com.syndrome.sanguocard.uiclass.UIBase;
+
+public class UICardGroup extends UIBase
+{
+    private var uiCardGroupList:UISpriteWithSlider;
+
+    uiCardGroupList = new UISpriteWithSlider("cardGroupList", ui.sprite_allCardGroup, new Vector.<UIItemCardGroup>);
+}
+
+```
+------
+## recommanded environment
+    FlexBuilder 4.5+
+------
+## profile
 ### battle
     the battle UI
 ### classLib
@@ -19,8 +36,8 @@ NiUI
     the readyRoom UI
 ### uiClass
     the UI classes
-------
-## usage
-## recommanded environment
-------
-## build    
+
+
+
+
+ 
