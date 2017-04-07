@@ -2,8 +2,8 @@ NiUI -- A Game UI components Library in ActionScript3
 ========
 ## usage
 ```
-import com.syndrome.sanguocard.uiclass.UISpriteWithSlider;
-import com.syndrome.sanguocard.uiclass.UIBase;
+import io.github.nicholaslee119.niui.uiclass.UISpriteWithSlider;
+import io.github.nicholaslee119.niui.uiclass.UIBase;
 
 public class UICardGroup extends UIBase
 {
