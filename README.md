@@ -18,10 +18,10 @@ public class UICardGroup extends UIBase
     FlexBuilder 4.5+
 ------
 ## implemented components
-- [] Button
-- [] SlideBar
-- [] Textarea
-- [] ItemList
-- [] Panel
-- [] Card
-- [] DropBox
+- [ ] Button
+- [ ] SlideBar
+- [ ] Textarea
+- [ ] ItemList
+- [ ] Panel
+- [ ] Card
+- [ ] DropBox
