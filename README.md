@@ -17,27 +17,11 @@ public class UICardGroup extends UIBase
 ## recommanded environment
     FlexBuilder 4.5+
 ------
-## profile
-### battle
-    the battle UI
-### classLib
-    the base classes
-### gameLib
-    the resource
-### lib
-    the lib
-### lobby
-    the lobby UI
-### mainfram
-    the entry of game
-### platform
-    the platform logic
-### readyRoom
-    the readyRoom UI
-### uiClass
-    the UI classes
-
-
-
-
- 
+## implemented components
+- [] Button
+- [] SlideBar
+- [] Textarea
+- [] ItemList
+- [] Panel
+- [] Card
+- [] DropBox
