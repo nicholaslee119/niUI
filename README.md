@@ -25,3 +25,5 @@ public class UICardGroup extends UIBase
 - [x] Panel
 - [x] Card
 - [x] DropBox
+- [x] Group
+- [x] Sprite
