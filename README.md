@@ -1,7 +1,7 @@
 NiUI -- A Game UI components Library in ActionScript3
 ========
 ## usage
-```
+```js
 import io.github.nicholaslee119.niui.uiclass.UISpriteWithSlider;
 import io.github.nicholaslee119.niui.uiclass.UIBase;
 
